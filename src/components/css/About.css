@@ -1,0 +1,168 @@
+#about-container{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7em;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    height: calc(100vh - 7em);
+    transform-origin: left;
+   
+}
+.bio{
+    width: 50%;
+}
+
+.bio h1 {
+    color: var(--primary);
+}
+
+.bio div{
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.skills h1{
+    color: var(--primary);
+}
+
+.skills ul{
+    padding: 0;
+    margin: 0;
+}
+
+.skills ul li{
+    list-style: none;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.icons {
+    height: 90%;
+    color: var(--primary);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+.icon {
+    cursor: pointer;
+    user-select: none;
+    transition: color 200ms ease-in-out, transform 100ms ease-in-out;
+}
+
+#about-container a:nth-child(1){
+    animation: bounce1 1.8s  ease-in-out alternate infinite;
+}
+#about-container a:nth-child(2){
+    animation: bounce2 1.8s 300ms ease-in-out alternate infinite;
+}
+#about-container a:nth-child(3){
+    animation: bounce3 1.8s 0.6s ease-in-out alternate infinite;
+}
+#about-container a:nth-child(4){
+    animation: bounce4 1.8s 0.9s ease-in-out alternate infinite;
+}
+
+#about-container a:hover {
+    color: white;
+    /* color: var(--primary); */
+    transform: scale(1.2);
+}
+
+.icon:active{
+    transform: scale(0.8);
+}
+
+#about-container a{
+    color: var(--primary);
+}
+
+/* .particles-js{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 90vw;
+    z-index: -4;
+  }
+   */
+
+   @keyframes bounce1 {
+       0% {
+        transform: scale(1);
+        color: var(--primary);
+       }
+
+       90% {
+            transform: scale(1);
+           color: var(--primary);
+       }
+       91% {
+           color: white;
+       }
+
+       100% {
+           transform: scale(1.2);
+           color: white;
+       }
+   }
+   @keyframes bounce2 {
+       0% {
+        transform: scale(1);
+        color: var(--primary);
+       }
+
+       80% {
+            transform: scale(1);
+           color: var(--primary);
+       }
+       91% {
+        color: white;
+    }
+
+    100% {
+        transform: scale(1.2);
+        color: white;
+    }
+   }
+   @keyframes bounce3 {
+       0% {
+        transform: scale(1);
+        color: var(--primary);
+       }
+
+       80% {
+            transform: scale(1);
+           color: var(--primary);
+       }
+       91% {
+        color: white;
+    }
+
+    100% {
+        transform: scale(1.2);
+        color: white;
+    }
+   }
+   @keyframes bounce4 {
+       0% {
+        transform: scale(1);
+        color: var(--primary);
+       }
+
+       80% {
+            transform: scale(1);
+           color: var(--primary);
+       }
+       91% {
+        color: white;
+    }
+
+    100% {
+        transform: scale(1.2);
+        color: white;
+    }
+   }

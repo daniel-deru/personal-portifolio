@@ -1,0 +1,118 @@
+#contact-container{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    margin-top: 7em;
+    height: calc(100vh - 7em);
+    display: flex;
+    transform-origin: left;
+    justify-content: center;
+}
+
+form{
+    font-size: 2em;
+}
+
+form > div{
+    margin: 25px;
+    position: relative;
+}
+
+form label{
+    margin-left: 10px;
+    font-size: .7em;
+    color: white;
+    display: block;
+}
+
+
+form input, form textarea {
+    font-weight: lighter;
+    padding: 5px;
+    color: white;
+    font-size: 1em;
+    width: 90%;
+    background: transparent;
+    border: 2px solid var(--primary);
+    outline: none;
+    transition: 200ms ease-in-out;
+}
+
+form input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+form textarea::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+form textarea{
+    font-size: 1.2em;
+}
+
+form input:focus::placeholder{
+    color: var(--primary);
+    opacity: 0.8;
+}
+form textarea:focus::placeholder{
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+form input:focus, form textarea:focus {
+   color: var(--primary);
+    border: 2px solid white;
+}
+
+form button{
+    border: none;
+    margin: 0 10px;
+    font-size: 0.7em;
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    transition: 200ms ease-in-out;
+}
+
+.button-icons{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+form button:hover{
+    transform: scale(1.1);
+}
+
+form button:active{
+    transform: scale(0.9);
+}
+
+.contact-icon {
+    background: var(--primary);
+    padding: 9px;
+    border-radius: 50%;
+
+}
+
+.contact-icon:hover{
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    
+}
+
+.contact-icon:active{
+    transform: scale(0.9);
+}
+
+#contact-container a{
+    color: white;
+}
